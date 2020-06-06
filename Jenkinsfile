@@ -12,11 +12,7 @@ pipeline {
 			}
 		}
 	}
-	stage("Quality Gate") {
-            steps {
-             sh 'echo QGATE'
-            }
-          }
+	
 	stage ('Deploy') {
 		steps {
 			sh 'echo DEPLOY'
